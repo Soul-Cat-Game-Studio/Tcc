@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f0487001-b49e-42d6-8ec5-a3bcd4c7b10b}">
+		<property name="assetPath">
+			<value>obstacle 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.55000000000000004</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8af30cb-41d6-4895-89c7-702c620b3482}</destination>
+		</relationship>
+	</object>
+</objects>

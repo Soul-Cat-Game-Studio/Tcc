@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7c9e36c6ce1894681c94ff31d012ec, type: 3}
+  m_Name: trabalhador3
+  m_EditorClassIdentifier: 
+  title: "Relat\xF3rio Oficial"
+  description: "\u201CRelat\xF3rio Oficial\r\n\tEu, Theodoro Fonseca, chefe das obras
+    na regi\xE3o de Porto Velho, venho por meio deste relat\xF3rio registrar os acontecimentos
+    dessa manh\xE3 de quarta- feira, 23 de Fevereiro. \r\n\tA obra iniciou em seu
+    hor\xE1rio costume, 5:40 da manh\xE3. Por volta das 11:00, pr\xF3ximo a regi\xE3o
+    do Lago, uma calorosa discuss\xE3o entre os trabalhadores e o engenheiro fora
+    apaziguada e logo ap\xF3s isso, barulhos altos foram ouvidos e o trilho pendia
+    sob a \xE1gua. Dois homens ficaram feridos e um morreu.\r\n\tHouve obstru\xE7\xF5es
+    por parte dos trabalhadores para com o engenheiro, motivo da discuss\xE3o de
+    mais cedo e, eventualmente, do descarrilamento do trem. \r\n\tEspero resposta
+    sobre quais medidas ser\xE3o tomadas.\r\n\r\n\t\t\t\t\t\t\t\tTheodoro Fonseca\u201D\r\n"

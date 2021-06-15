@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{857a8332-5cef-49be-bace-bf27e50c7042}">
+		<property name="assetPath">
+			<value>Mosquito 5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.8697732426303855</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8af30cb-41d6-4895-89c7-702c620b3482}</destination>
+		</relationship>
+	</object>
+</objects>

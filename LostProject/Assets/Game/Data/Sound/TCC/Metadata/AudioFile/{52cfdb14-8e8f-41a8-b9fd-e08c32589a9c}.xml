@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{52cfdb14-8e8f-41a8-b9fd-e08c32589a9c}">
+		<property name="assetPath">
+			<value>passo em madeira 2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.32320833333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8af30cb-41d6-4895-89c7-702c620b3482}</destination>
+		</relationship>
+	</object>
+</objects>

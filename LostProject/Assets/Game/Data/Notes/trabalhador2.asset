@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f7c9e36c6ce1894681c94ff31d012ec, type: 3}
+  m_Name: trabalhador2
+  m_EditorClassIdentifier: 
+  title: Carta Borrada
+  description: "\u201C[...] Odeio este lugar com todas as minhas for\xE7as! Minha
+    perna d\xF3i horrores e s\xF3 a bebida consegue amenizar. Tenho certeza que essa
+    porcaria vai infeccionar e gangrenar.\r\n\tEstamos em guerra, entende? Somos
+    n\xF3s contra eles. Milhares de armadilhas espalhadas por todos os lugares; minha
+    perna mesmo eu perdi para esses dem\xF4nios. Sombras que vagam pela mata e nos
+    mutilam! \r\n\tEspero que estejam preparados para a nossa eletricidade [...]
+    (meu objetivo nesse final era focar nas armadilhas com eletricidade dos \u201Cbrancos\u201D)\u201D\r\n"

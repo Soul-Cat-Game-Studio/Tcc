@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{8b259fca-6215-4d22-9714-0d929de32165}">
+		<property name="name">
+			<value>Lake Sound</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d43b2cb4-92d5-4c03-a217-9e86c75aba3b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9dd97739-d256-46d8-a0f2-4e0d5ab8444d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9dd97739-d256-46d8-a0f2-4e0d5ab8444d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

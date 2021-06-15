@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="UiMixerView" id="{3023e09b-b639-4443-b5db-f19f5900f511}">
+		<property name="name">
+			<value>Efeito mamoré Mixer</value>
+		</property>
+		<relationship name="mixer">
+			<destination>{57753e49-15bb-4082-8d89-3620547fb319}</destination>
+		</relationship>
+	</object>
+</objects>

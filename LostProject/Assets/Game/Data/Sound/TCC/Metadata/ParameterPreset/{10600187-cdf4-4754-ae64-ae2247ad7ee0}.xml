@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{10600187-cdf4-4754-ae64-ae2247ad7ee0}">
+		<property name="name">
+			<value>Crouch-Run</value>
+		</property>
+		<relationship name="folder">
+			<destination>{d43b2cb4-92d5-4c03-a217-9e86c75aba3b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3c09e907-f187-4d50-a973-4f16a00d8bd4}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3c09e907-f187-4d50-a973-4f16a00d8bd4}">
+		<property name="minimum">
+			<value>-12</value>
+		</property>
+		<property name="maximum">
+			<value>12</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

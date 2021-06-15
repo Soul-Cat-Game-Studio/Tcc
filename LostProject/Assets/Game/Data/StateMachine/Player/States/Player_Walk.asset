@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26673967177548d4ab7ffc81657c71c8, type: 3}
+  m_Name: Player_Walk
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: d63312736b55c0945a4324688d27b889, type: 2}
+  - {fileID: 11400000, guid: e1be3e3a41a08b746a0637720520736c, type: 2}
+  - {fileID: 11400000, guid: 82533ac6f5242f34695fd2c0a6d2dc4c, type: 2}
+  transitions:
+  - ToState: {fileID: 11400000, guid: 8d125a7019c6dca498418a2b6e1d3a64, type: 2}
+    conditionState:
+    - condition: {fileID: 11400000, guid: 6fa0023000dfb9c47ba7e483aab79ca6, type: 2}
+      boolState: 0
+      operation: 1
+  - ToState: {fileID: 11400000, guid: daf08d50585987a4581c98bf217b4714, type: 2}
+    conditionState:
+    - condition: {fileID: 11400000, guid: 3f9fa66c53e476b4c8bfcca9244c5f06, type: 2}
+      boolState: 1
+      operation: 1
+  - ToState: {fileID: 0}
+    conditionState:
+    - condition: {fileID: 0}
+      boolState: 1
+      operation: 1

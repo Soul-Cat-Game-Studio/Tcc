@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26673967177548d4ab7ffc81657c71c8, type: 3}
+  m_Name: Player_Crouch_Idle
+  m_EditorClassIdentifier: 
+  actions:
+  - {fileID: 11400000, guid: ae053abc410754c43b4772ca81d0cb73, type: 2}
+  - {fileID: 11400000, guid: b5a9de46aa890ba408d0c4e65f39cfb8, type: 2}
+  transitions:
+  - ToState: {fileID: 11400000, guid: 8d125a7019c6dca498418a2b6e1d3a64, type: 2}
+    conditionState:
+    - condition: {fileID: 11400000, guid: 3f9fa66c53e476b4c8bfcca9244c5f06, type: 2}
+      boolState: 0
+      operation: 0
+  - ToState: {fileID: 11400000, guid: a27f20f90bdf3c2459375c7d674b4c9a, type: 2}
+    conditionState:
+    - condition: {fileID: 11400000, guid: 6fa0023000dfb9c47ba7e483aab79ca6, type: 2}
+      boolState: 1
+      operation: 0
