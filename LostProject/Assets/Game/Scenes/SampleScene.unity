@@ -879,13 +879,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.387, z: -0.3}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.24000001, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 20.146, y: 195.09, z: 0.001}
+  m_Children:
+  - {fileID: 6832107883922427415}
+  m_Father: {fileID: 6831842536780265701}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0.93, y: 0, z: 0}
 --- !u!114 &1687258586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11081,10 +11082,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.147, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6832107883922427415}
+  - {fileID: 1687258585}
   - {fileID: 700389612}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6831882057683947777
 Transform:
@@ -11322,12 +11323,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6834861535232957007}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.24000001, z: 0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6831638925842007933}
-  m_Father: {fileID: 6831842536780265701}
+  m_Father: {fileID: 1687258585}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6832118976703178781
@@ -12083,8 +12084,8 @@ GameObject:
   - component: {fileID: 6835057587071326980}
   - component: {fileID: 6835057587071326983}
   - component: {fileID: 6835057587071326982}
-  - component: {fileID: 6835057587071326984}
   - component: {fileID: 6835057587071326985}
+  - component: {fileID: 6835057587071326984}
   m_Layer: 8
   m_Name: Player Controller
   m_TagString: Untagged
@@ -12172,6 +12173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _input: {fileID: 11400000, guid: 9ab22b0048e9b0b4f9c8da7ca7ac73c7, type: 2}
   _config: {fileID: 11400000, guid: e24e2475ed79013409463c5e2aacb162, type: 2}
+  _camHolder: {fileID: 700389612}
   limitCam: {x: -90, y: 90}
   smoothY: 10
   smoothX: 10

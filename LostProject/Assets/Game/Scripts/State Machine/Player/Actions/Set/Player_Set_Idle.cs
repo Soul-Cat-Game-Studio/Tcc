@@ -18,7 +18,7 @@ public class Player_Set_Idle : Action
 
         // stateData.GetData<Animator>(_keys.animator, out var animator);
         stateData.GetData<CharacterController>(_keys.characterController, out var controller);        
-        stateData.GetData<PlayerController>(_keys.characterController, out var playerController);        
+        stateData.GetData<PlayerController>(_keys.playerController, out var playerController);        
 
         // animator.SetBool(_keys.animIsMovin, false);
         // animator.SetBool(_keys.animIsCrouching, false);

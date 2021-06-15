@@ -12,11 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c992348d9938646b333e7d99dbf94a, type: 3}
   m_Name: Check Material FootStep Walk ACT
   m_EditorClassIdentifier: 
-  sounds:
-  - sound: event:/PlayerSounds/Player Action Sounds/PlayerMovimentSounds/PlayerFoosteps/PlayerFootstepSound
-    enterParams: []
-    exitParams: []
+  sounds: []
   range: 2
-  updateParams:
-  - Name: Material
-    Value: 0
+  updateParams: []

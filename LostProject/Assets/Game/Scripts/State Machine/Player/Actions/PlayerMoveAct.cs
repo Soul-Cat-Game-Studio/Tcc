@@ -9,8 +9,7 @@ public class PlayerMoveAct : Action
     [SerializeField] private PlayerConfiguration _config;
 
     public PlayerConfiguration.velocity setVelocity;
-
-    private PlayerController playerController;
+        
 
     public override void ActEnter(StateMachine stateMachine)
     {
@@ -23,8 +22,6 @@ public class PlayerMoveAct : Action
         Walk(stateMachine);
     }
 
-
-
     private void Walk(StateMachine stateMachine)
     {
         var stateData = stateMachine.StateData;
@@ -35,15 +32,14 @@ public class PlayerMoveAct : Action
 
         stateData.GetData<PlayerController>(_keys.playerController, out var playerController);
 
-        stateData.GetData<Animator>(_keys.animator, out var animator);
-
-
+        // stateData.GetData<Animator>(_keys.animator, out var animator);
+        
 
         var move = (player.right * playerController.moveValue.x + player.forward * playerController.moveValue.y);
 
         controller.Move(move * _config.currentVelocity * Time.deltaTime);
 
-        animator.SetFloat(_keys.animhorizontal, playerController.moveValue.x, 0.1f, Time.deltaTime);
-        animator.SetFloat(_keys.animvertical, playerController.moveValue.y, 0.1f, Time.deltaTime);
+        // animator.SetFloat(_keys.animhorizontal, playerController.moveValue.x, 0.1f, Time.deltaTime);
+        // animator.SetFloat(_keys.animvertical, playerController.moveValue.y, 0.1f, Time.deltaTime);
     }
 }

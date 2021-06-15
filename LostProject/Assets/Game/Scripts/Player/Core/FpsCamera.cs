@@ -11,6 +11,7 @@ public class FpsCamera : MonoBehaviour
 
     [Space(20)]
 
+    [SerializeField] private Transform _camHolder;
     [SerializeField] private Vector2 limitCam;
     public float smoothY = 2f;
     public float smoothX = 2f;
@@ -21,6 +22,7 @@ public class FpsCamera : MonoBehaviour
     private float rx;
 
     private Vector2 _camRot;
+    private Vector2 _playerRot;
 
 
     private void OnEnable()
@@ -34,6 +36,13 @@ public class FpsCamera : MonoBehaviour
         _input.GameplayLookEvent -= UpdateLookInput;
     }
 
+    private void Start()
+    {
+        _playerRot = transform.localRotation.eulerAngles;
+        _camRot = transform.localRotation.eulerAngles;
+
+    }
+
     private void Update()
     {
         UpdateLook();
@@ -41,8 +50,13 @@ public class FpsCamera : MonoBehaviour
 
     private void UpdateLook()
     {
+        _playerRot.y += _config.mouseSensitivityX * _look.x * Time.deltaTime;
+        transform.localRotation = Quaternion.Euler(_playerRot);
+
         _camRot.x += _config.mouseSensitivityY * _look.y * Time.deltaTime;
         _camRot.x = Mathf.Clamp(_camRot.x, limitCam.x, limitCam.y);
+
+        _camHolder.localRotation = Quaternion.Euler(_camRot);
 
 
 

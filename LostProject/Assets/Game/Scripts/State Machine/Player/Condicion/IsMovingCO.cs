@@ -14,7 +14,6 @@ public class IsMovingCO : Condition
      
         stateData.GetData<PlayerController>(_keys.playerController, out var playerController);
         
-        return playerController.isMoving;
-        
+        return playerController.isMoving;        
     }
 }

@@ -114,6 +114,7 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions, GameInp
         }
 
         DisableAllInput();
+        EnableGameplayInput(); //Tirar
     }
 
     private void OnDisable()

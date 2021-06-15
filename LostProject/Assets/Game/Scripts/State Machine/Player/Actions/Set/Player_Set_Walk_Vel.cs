@@ -11,20 +11,20 @@ public class Player_Set_Walk_Vel : Action
     public override void ActEnter(StateMachine stateMachine)
     {     
 
-        var stateData = stateMachine.StateData;       
+        // var stateData = stateMachine.StateData;       
 
-        stateData.GetData<Animator>(_keys.animator, out var animator);
+        // stateData.GetData<Animator>(_keys.animator, out var animator);
 
-        animator.SetBool(_keys.animIsMovin, true);
+        // animator.SetBool(_keys.animIsMovin, true);
 
     }
 
     public override void ActExit(StateMachine stateMachine)
     {
-        var stateData = stateMachine.StateData;       
+        // var stateData = stateMachine.StateData;       
 
-        stateData.GetData<Animator>(_keys.animator, out var animator);
+        // stateData.GetData<Animator>(_keys.animator, out var animator);
 
-        animator.SetBool(_keys.animIsMovin, false);
+        // animator.SetBool(_keys.animIsMovin, false);
     }
 }
