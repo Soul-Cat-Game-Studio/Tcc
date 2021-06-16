@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00c09f1982166242b33a3b648b94365, type: 3}
   m_Name: Player_Set_Crouch_Velocity_ACT
   m_EditorClassIdentifier: 
-  _config: {fileID: 11400000, guid: e24e2475ed79013409463c5e2aacb162, type: 2}
+  _settings: {fileID: 11400000, guid: 27fcb46363623b24e98af47007f644fc, type: 2}
+  playerControl: {fileID: 11400000, guid: 9a473879572bf854183c067745be2371, type: 2}
   _keys: {fileID: 11400000, guid: a8d73e343c06f024c888fb69e7778b54, type: 2}

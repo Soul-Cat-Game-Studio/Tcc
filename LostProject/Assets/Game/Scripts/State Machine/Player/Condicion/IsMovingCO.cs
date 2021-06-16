@@ -7,13 +7,12 @@ using UnityEngine;
 public class IsMovingCO : Condition
 {
     [SerializeField] private PlayerStateKeys _keys;
+    [SerializeField] private PlayerControl control;
 
     public override bool Decide(StateMachine stateMachine)
     {
-        var stateData = stateMachine.StateData;
-     
-        stateData.GetData<PlayerController>(_keys.playerController, out var playerController);
-        
-        return playerController.isMoving;        
+
+
+        return control.isMoving;
     }
 }

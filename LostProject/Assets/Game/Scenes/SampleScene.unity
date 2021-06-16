@@ -477,7 +477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700389610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.344, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2141231153}
@@ -880,7 +880,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.24000001, z: -0.3}
+  m_LocalPosition: {x: 0, y: 0.584, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6832107883922427415}
@@ -11079,7 +11079,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6835057587071326979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.147, z: 0}
+  m_LocalPosition: {x: 0, y: 1.075, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1687258585}
@@ -12172,11 +12172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _input: {fileID: 11400000, guid: 9ab22b0048e9b0b4f9c8da7ca7ac73c7, type: 2}
-  _config: {fileID: 11400000, guid: e24e2475ed79013409463c5e2aacb162, type: 2}
+  settings: {fileID: 11400000, guid: 27fcb46363623b24e98af47007f644fc, type: 2}
   _camHolder: {fileID: 700389612}
-  limitCam: {x: -90, y: 90}
-  smoothY: 10
-  smoothX: 10
 --- !u!114 &6835057587071326985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12186,20 +12183,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6835057587071326979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4583e5fea0ea744499523294d36dd5a6, type: 3}
+  m_Script: {fileID: 11500000, guid: af01e72ab00df7c4d84a4b3929bf638d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stateData: {fileID: 6835057587071326983}
   keys: {fileID: 11400000, guid: a8d73e343c06f024c888fb69e7778b54, type: 2}
   input: {fileID: 11400000, guid: 9ab22b0048e9b0b4f9c8da7ca7ac73c7, type: 2}
-  configuration: {fileID: 11400000, guid: e24e2475ed79013409463c5e2aacb162, type: 2}
-  canMove: 1
-  isMoving: 0
-  isRunning: 0
-  moveValue: {x: 0, y: 0}
-  canCrouch: 1
-  isCrouching: 0
-  canInteract: 1
+  control: {fileID: 11400000, guid: 9a473879572bf854183c067745be2371, type: 2}
+  settings: {fileID: 11400000, guid: 27fcb46363623b24e98af47007f644fc, type: 2}
   ignoreLayer:
     serializedVersion: 2
     m_Bits: 0

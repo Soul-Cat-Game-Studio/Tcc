@@ -4,31 +4,18 @@ using UnityEngine;
 
 public class InteractView : MonoBehaviour
 {
+    public PlayerControl playerControl;
     public IInteractable currentSelectd;
     public IInteractionActions currentActions;
 
     [SerializeField] private UiObserver _uiObserver;
     public InputReader input;
 
-
-    public PlayerStateKeys keys;
-    public StateMachineData stateData;
-
+  
     [Range(0, 10)]
     public float range;
     [SerializeField] private LayerMask interactLayer;
-    [SerializeField] private Camera _cam;
-
-
-    private void OnEnable()
-    {
-        input.CanInteractEvent += disableInteraction;
-    }
-
-    private void OnDisable()
-    {
-        input.CanInteractEvent -= disableInteraction;
-    }
+    [SerializeField] private Camera _cam; 
 
     private void Awake()
     {
@@ -38,15 +25,7 @@ public class InteractView : MonoBehaviour
     private void Update()
     {
         FindinteractTarget();
-    }
-
-    private void disableInteraction(bool active)
-    {
-        if (!active)
-        {
-            ChangeSeleted(null, null);
-        }
-    }
+    }    
 
     private void ChangeSeleted(IInteractable interactable, IInteractionActions actions)
     {
@@ -74,9 +53,9 @@ public class InteractView : MonoBehaviour
 
     private void FindinteractTarget()
     {
-        stateData.GetData<PlayerController>(keys.playerController, out var playerController);
+        
 
-        if (!playerController.canInteract) return;
+        if (!playerControl.canInteract) return;
 
         var ray = CreateRayFromScreenCenter();
 

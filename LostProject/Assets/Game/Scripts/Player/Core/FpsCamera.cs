@@ -7,19 +7,13 @@ using Cinemachine;
 public class FpsCamera : MonoBehaviour
 {
     [SerializeField] private InputReader _input;
-    [SerializeField] private PlayerConfiguration _config;
+    public PlayerSettings settings;
 
     [Space(20)]
 
-    [SerializeField] private Transform _camHolder;
-    [SerializeField] private Vector2 limitCam;
-    public float smoothY = 2f;
-    public float smoothX = 2f;
+    [SerializeField] private Transform _camHolder;    
 
-
-    private Vector2 _look;
-    private float _camPitch;
-    private float rx;
+    private Vector2 _look;  
 
     private Vector2 _camRot;
     private Vector2 _playerRot;
@@ -27,13 +21,13 @@ public class FpsCamera : MonoBehaviour
 
     private void OnEnable()
     {
-        _input.GameplayLookEvent += UpdateLookInput;
+        _input.LookEvent += UpdateLookInput;
 
     }
 
     private void OnDisable()
     {
-        _input.GameplayLookEvent -= UpdateLookInput;
+        _input.LookEvent -= UpdateLookInput;
     }
 
     private void Start()
@@ -50,26 +44,13 @@ public class FpsCamera : MonoBehaviour
 
     private void UpdateLook()
     {
-        _playerRot.y += _config.mouseSensitivityX * _look.x * Time.deltaTime;
+        _playerRot.y += settings.mouseSensitivityX * _look.x * Time.deltaTime;
         transform.localRotation = Quaternion.Euler(_playerRot);
 
-        _camRot.x += _config.mouseSensitivityY * _look.y * Time.deltaTime;
-        _camRot.x = Mathf.Clamp(_camRot.x, limitCam.x, limitCam.y);
+        _camRot.x += settings.mouseSensitivityY * _look.y * Time.deltaTime;
+        _camRot.x = Mathf.Clamp(_camRot.x, settings.cameraLimit.x, settings.cameraLimit.y);
 
         _camHolder.localRotation = Quaternion.Euler(_camRot);
-
-
-
-
-
-
-        // _camPitch -= _look.y * _config.mouseSensitivityY;
-
-        // _camPitch = Mathf.Clamp(_camPitch, limitCam.x, limitCam.y);
-
-        // var rot = new Vector2(_camPitch,  _look.x * _config.mouseSensitivityX);
-
-        // transform.localEulerAngles = rot;      
     }
 
 
@@ -77,6 +58,4 @@ public class FpsCamera : MonoBehaviour
     {
         _look = pos;
     }
-
-
 }

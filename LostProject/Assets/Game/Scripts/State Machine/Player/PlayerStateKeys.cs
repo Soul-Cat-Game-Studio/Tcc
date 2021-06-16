@@ -10,8 +10,6 @@ public class PlayerStateKeys : StateMachineKeys
     public readonly string animator = "Animator";
     public readonly string player = "Player";
     public readonly string characterController = "CharacterController";
-    public readonly string playerController = "PlayerController";
-    public readonly string camera = "Camera";
 
     #endregion
 
@@ -37,16 +35,12 @@ public class PlayerStateKeys : StateMachineKeys
 
     public override void CreatKeys(StateMachineData stateMachineData)
     {
-        var camera = Camera.main.transform;
         var player = stateMachineData.GetComponent<Transform>();
         var animator = stateMachineData.GetComponent<Animator>();
-        var characterController = stateMachineData.GetComponent<CharacterController>();
-        var playerController = stateMachineData.GetComponent<PlayerController>();
+        var characterController = stateMachineData.GetComponent<CharacterController>();        
 
         stateMachineData.CacheData(this.animator, animator);
         stateMachineData.CacheData(this.player, player);
         stateMachineData.CacheData(this.characterController, characterController);
-        stateMachineData.CacheData(this.camera, camera);
-        stateMachineData.CacheData(this.playerController, playerController);
     }
 }

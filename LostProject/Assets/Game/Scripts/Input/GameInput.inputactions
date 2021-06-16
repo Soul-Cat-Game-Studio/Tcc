@@ -19,7 +19,7 @@
                     "id": "73fce086-6060-4650-ae8c-abe4dfefa42f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=2)"
+                    "interactions": "Press"
                 },
                 {
                     "name": "Look",
@@ -38,15 +38,7 @@
                     "interactions": "Press"
                 },
                 {
-                    "name": "Vault",
-                    "type": "Button",
-                    "id": "a9d6450a-d56a-4708-a834-64e105bb8dc4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "PrimaryAction",
+                    "name": "Interaction",
                     "type": "Button",
                     "id": "0e57eb5b-1e43-4a49-9214-6cfab4d6c157",
                     "expectedControlType": "Button",
@@ -54,15 +46,7 @@
                     "interactions": "Press"
                 },
                 {
-                    "name": "SecondAction",
-                    "type": "Button",
-                    "id": "9fccdb9a-e31e-4a79-a319-e47561f5c681",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "InventoryAccess",
+                    "name": "Inventory",
                     "type": "Button",
                     "id": "b97bd464-52eb-482e-a7e7-8eae5fbfc931",
                     "expectedControlType": "Button",
@@ -70,39 +54,7 @@
                     "interactions": "Press"
                 },
                 {
-                    "name": "LightOn",
-                    "type": "Button",
-                    "id": "5c686335-8186-4c85-ab14-458c78c7a8dc",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "LightOff",
-                    "type": "Button",
-                    "id": "49f18e4a-1c51-459d-99aa-dab5d8afdd17",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "LightSwitch",
-                    "type": "Value",
-                    "id": "04035f39-655d-4ea0-a92f-bc31888109e2",
-                    "expectedControlType": "Axis",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "RechargeOil",
-                    "type": "Button",
-                    "id": "740b2d3c-8cb7-47df-ac5f-770a366b2a62",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "PauseMenu",
+                    "name": "PauseGame",
                     "type": "Button",
                     "id": "4646dc99-bc97-48d5-b9b9-781b17178a78",
                     "expectedControlType": "Button",
@@ -245,34 +197,12 @@
                 },
                 {
                     "name": "",
-                    "id": "a1d2a474-1460-4e45-a6ff-5817e6bfc9d2",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Xbox",
-                    "action": "Vault",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "57dba32a-f041-4b26-b813-0c8eaed22caa",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Pc",
-                    "action": "Vault",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "faebb2b3-a7df-48be-895a-4b93fcce33ba",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "Xbox",
-                    "action": "PrimaryAction",
+                    "action": "Interaction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -283,29 +213,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Xbox",
-                    "action": "PrimaryAction",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "54ca5747-83af-480e-99bd-9188b582a5b2",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SecondAction",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a89dad38-ddb1-40f4-954f-a9fd59aa71bd",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Xbox",
-                    "action": "SecondAction",
+                    "action": "Interaction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -316,51 +224,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Pc",
-                    "action": "InventoryAccess",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "f1676720-b0cd-4d58-bc15-e02470da9540",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LightOn",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7b85b72a-01ca-43f6-ad2b-59cde9b9283e",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "LightOff",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "ea2ebb43-672d-4892-bc8e-ad0e3f350b25",
-                    "path": "<Mouse>/scroll/y",
-                    "interactions": "",
-                    "processors": "Normalize(min=-1,max=1)",
-                    "groups": "Pc",
-                    "action": "LightSwitch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "eb7886ed-9e3d-4cd8-8533-236deab5ea62",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RechargeOil",
+                    "action": "Inventory",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -371,7 +235,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PauseMenu",
+                    "action": "PauseGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -382,17 +246,17 @@
             "id": "3dcb7c46-a872-4313-95c0-34602a8076a5",
             "actions": [
                 {
-                    "name": "InventoryDeaccess",
+                    "name": "Inventory",
                     "type": "Button",
-                    "id": "725e3dff-70bb-4fed-b9cd-0ee58cd80d90",
+                    "id": "8abe5f44-3ac0-405c-8d26-9b54623c02d0",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press"
                 },
                 {
-                    "name": "PauseMenu",
+                    "name": "PauseGame",
                     "type": "Button",
-                    "id": "35a1ecaf-3b6b-46cb-95fd-089b9db505ba",
+                    "id": "9339e4b0-10c2-4d95-9595-ea130e8ce3d4",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
@@ -401,23 +265,23 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "44a6b943-b27a-4c43-a2df-905740ef0d82",
-                    "path": "<Keyboard>/i",
+                    "id": "238da9fe-c5dd-43cd-8b7d-520bf614db94",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Pc",
-                    "action": "InventoryDeaccess",
+                    "groups": "",
+                    "action": "PauseGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "1f634e31-c94e-42dc-b862-da7ee90b463a",
-                    "path": "<Keyboard>/escape",
+                    "id": "20aeeddb-a970-459b-a629-d00ad6d096da",
+                    "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "PauseMenu",
+                    "groups": "Pc",
+                    "action": "Inventory",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -428,33 +292,25 @@
             "id": "a13132e9-89b9-454a-a879-86daba187fec",
             "actions": [
                 {
-                    "name": "Rotate",
+                    "name": "Interaction",
+                    "type": "Button",
+                    "id": "30a551d1-6d11-4bb6-98d2-621d4453b586",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "Look",
                     "type": "Value",
-                    "id": "10032f50-bf22-4e58-ab58-e6a0e52eaf6c",
+                    "id": "a1af2c9f-9b2c-499f-b97b-2362e36c1865",
                     "expectedControlType": "Vector2",
-                    "processors": "NormalizeVector2",
+                    "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "PrimaryActionInspect",
+                    "name": "PauseGame",
                     "type": "Button",
-                    "id": "0c65e09e-c972-4180-bccd-c8e6a95dfea4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "SecondActionInspect",
-                    "type": "Button",
-                    "id": "1981b803-6696-4df5-9f23-cfcd62d751a0",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "Press"
-                },
-                {
-                    "name": "PauseMenu",
-                    "type": "Button",
-                    "id": "28815717-dfe2-4d97-af7b-21f245f54d70",
+                    "id": "d3c0e1d5-5a88-4c4f-bc3d-576da8d3c410",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
@@ -463,67 +319,56 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "422b3607-615b-4d25-b953-8595b32b5c78",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Rotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "fb133c5e-f8eb-4383-ae80-f4dd7ecc44cf",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Xbox",
-                    "action": "PrimaryActionInspect",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d78f6a51-d726-40fe-80b2-d60a1cbdfb1e",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SecondActionInspect",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "97f274cc-5f0b-4bdb-ba32-4d35bd792e38",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Xbox",
-                    "action": "SecondActionInspect",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "44660e9c-603e-475f-9138-c0b150bd176c",
-                    "path": "<XInputController>/rightStick",
-                    "interactions": "",
-                    "processors": "StickDeadzone",
-                    "groups": "Xbox",
-                    "action": "Rotate",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a8629d78-d3be-4975-a5cd-6ebc201681df",
+                    "id": "a2a05b20-5c3f-4e75-b160-3fb18f4610e8",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PauseMenu",
+                    "action": "PauseGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4530380f-933f-4ef6-9f6f-a413d0ddee1c",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "729547f0-db79-4260-bb6e-2ad621d5ba84",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Xbox",
+                    "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8c02f553-fc28-42a9-a9fc-a0c67de5047b",
+                    "path": "<XInputController>/rightStick",
+                    "interactions": "",
+                    "processors": "StickDeadzone",
+                    "groups": "Xbox",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a3010c05-0168-4ded-bfe3-cd2b049c647f",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Pc",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -1040,9 +885,9 @@
             "id": "c7f287cc-69aa-4c4a-a472-60a18e6b537c",
             "actions": [
                 {
-                    "name": "PauseMenu",
+                    "name": "PauseGame",
                     "type": "Button",
-                    "id": "4688c2d8-4532-47d2-9df2-33ff9780e070",
+                    "id": "dd81c9e0-5890-4d5b-bd2a-58ca3361444d",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
@@ -1051,12 +896,12 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "892a362c-68fa-43a6-aab2-27f4bbb8c135",
+                    "id": "b2b4358b-2ee7-4f40-b401-72ea578d7278",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "PauseMenu",
+                    "action": "PauseGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

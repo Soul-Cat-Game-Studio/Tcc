@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a82a4c98bb653a4c8d8bf52dc7db7cf, type: 3}
+  m_Name: PlayerSettings
+  m_EditorClassIdentifier: 
+  anormalMove: 0
+  velocitySelected: 0
+  _walkVelocity: 5.37
+  _anormalWalkVelocity: 3.96
+  _crouchVelocity: 3.6
+  _anormalCrouchVelocity: 1.09
+  _runVelocity: 3.64
+  _anormalRunVelocity: 4.49
+  mouseSensitivityX: 4.24
+  mouseSensitivityY: 3.85
+  cameraLimit: {x: -90, y: 90}
+  standUp: 1.73
+  standDown: 0.5

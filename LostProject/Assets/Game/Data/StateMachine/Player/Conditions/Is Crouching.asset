@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3393d8634c91f4291a6a30d20138e9, type: 3}
   m_Name: Is Crouching
   m_EditorClassIdentifier: 
-  _input: {fileID: 11400000, guid: 037fe479e3882a24eb1c0eacc039f4f9, type: 2}
   _keys: {fileID: 11400000, guid: a8d73e343c06f024c888fb69e7778b54, type: 2}
-  _isCrouching: 0
+  control: {fileID: 11400000, guid: 9a473879572bf854183c067745be2371, type: 2}

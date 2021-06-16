@@ -32,7 +32,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""id"": ""73fce086-6060-4650-ae8c-abe4dfefa42f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Press(behavior=2)""
+                    ""interactions"": ""Press""
                 },
                 {
                     ""name"": ""Look"",
@@ -51,15 +51,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": ""Press""
                 },
                 {
-                    ""name"": ""Vault"",
-                    ""type"": ""Button"",
-                    ""id"": ""a9d6450a-d56a-4708-a834-64e105bb8dc4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""PrimaryAction"",
+                    ""name"": ""Interaction"",
                     ""type"": ""Button"",
                     ""id"": ""0e57eb5b-1e43-4a49-9214-6cfab4d6c157"",
                     ""expectedControlType"": ""Button"",
@@ -67,15 +59,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": ""Press""
                 },
                 {
-                    ""name"": ""SecondAction"",
-                    ""type"": ""Button"",
-                    ""id"": ""9fccdb9a-e31e-4a79-a319-e47561f5c681"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""InventoryAccess"",
+                    ""name"": ""Inventory"",
                     ""type"": ""Button"",
                     ""id"": ""b97bd464-52eb-482e-a7e7-8eae5fbfc931"",
                     ""expectedControlType"": ""Button"",
@@ -83,39 +67,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": ""Press""
                 },
                 {
-                    ""name"": ""LightOn"",
-                    ""type"": ""Button"",
-                    ""id"": ""5c686335-8186-4c85-ab14-458c78c7a8dc"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""LightOff"",
-                    ""type"": ""Button"",
-                    ""id"": ""49f18e4a-1c51-459d-99aa-dab5d8afdd17"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""LightSwitch"",
-                    ""type"": ""Value"",
-                    ""id"": ""04035f39-655d-4ea0-a92f-bc31888109e2"",
-                    ""expectedControlType"": ""Axis"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""RechargeOil"",
-                    ""type"": ""Button"",
-                    ""id"": ""740b2d3c-8cb7-47df-ac5f-770a366b2a62"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""PauseMenu"",
+                    ""name"": ""PauseGame"",
                     ""type"": ""Button"",
                     ""id"": ""4646dc99-bc97-48d5-b9b9-781b17178a78"",
                     ""expectedControlType"": ""Button"",
@@ -258,34 +210,12 @@ public class @GameInput : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a1d2a474-1460-4e45-a6ff-5817e6bfc9d2"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Xbox"",
-                    ""action"": ""Vault"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""57dba32a-f041-4b26-b813-0c8eaed22caa"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Pc"",
-                    ""action"": ""Vault"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""faebb2b3-a7df-48be-895a-4b93fcce33ba"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Xbox"",
-                    ""action"": ""PrimaryAction"",
+                    ""action"": ""Interaction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -296,29 +226,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Xbox"",
-                    ""action"": ""PrimaryAction"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""54ca5747-83af-480e-99bd-9188b582a5b2"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SecondAction"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a89dad38-ddb1-40f4-954f-a9fd59aa71bd"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Xbox"",
-                    ""action"": ""SecondAction"",
+                    ""action"": ""Interaction"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -329,51 +237,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Pc"",
-                    ""action"": ""InventoryAccess"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""f1676720-b0cd-4d58-bc15-e02470da9540"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LightOn"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""7b85b72a-01ca-43f6-ad2b-59cde9b9283e"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LightOff"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""ea2ebb43-672d-4892-bc8e-ad0e3f350b25"",
-                    ""path"": ""<Mouse>/scroll/y"",
-                    ""interactions"": """",
-                    ""processors"": ""Normalize(min=-1,max=1)"",
-                    ""groups"": ""Pc"",
-                    ""action"": ""LightSwitch"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""eb7886ed-9e3d-4cd8-8533-236deab5ea62"",
-                    ""path"": ""<Keyboard>/r"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RechargeOil"",
+                    ""action"": ""Inventory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -384,7 +248,7 @@ public class @GameInput : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PauseMenu"",
+                    ""action"": ""PauseGame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -395,17 +259,17 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""id"": ""3dcb7c46-a872-4313-95c0-34602a8076a5"",
             ""actions"": [
                 {
-                    ""name"": ""InventoryDeaccess"",
+                    ""name"": ""Inventory"",
                     ""type"": ""Button"",
-                    ""id"": ""725e3dff-70bb-4fed-b9cd-0ee58cd80d90"",
+                    ""id"": ""8abe5f44-3ac0-405c-8d26-9b54623c02d0"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press""
                 },
                 {
-                    ""name"": ""PauseMenu"",
+                    ""name"": ""PauseGame"",
                     ""type"": ""Button"",
-                    ""id"": ""35a1ecaf-3b6b-46cb-95fd-089b9db505ba"",
+                    ""id"": ""9339e4b0-10c2-4d95-9595-ea130e8ce3d4"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
@@ -414,23 +278,23 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""44a6b943-b27a-4c43-a2df-905740ef0d82"",
-                    ""path"": ""<Keyboard>/i"",
+                    ""id"": ""238da9fe-c5dd-43cd-8b7d-520bf614db94"",
+                    ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Pc"",
-                    ""action"": ""InventoryDeaccess"",
+                    ""groups"": """",
+                    ""action"": ""PauseGame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""1f634e31-c94e-42dc-b862-da7ee90b463a"",
-                    ""path"": ""<Keyboard>/escape"",
+                    ""id"": ""20aeeddb-a970-459b-a629-d00ad6d096da"",
+                    ""path"": ""<Keyboard>/i"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""PauseMenu"",
+                    ""groups"": ""Pc"",
+                    ""action"": ""Inventory"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -441,33 +305,25 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""id"": ""a13132e9-89b9-454a-a879-86daba187fec"",
             ""actions"": [
                 {
-                    ""name"": ""Rotate"",
+                    ""name"": ""Interaction"",
+                    ""type"": ""Button"",
+                    ""id"": ""30a551d1-6d11-4bb6-98d2-621d4453b586"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
+                },
+                {
+                    ""name"": ""Look"",
                     ""type"": ""Value"",
-                    ""id"": ""10032f50-bf22-4e58-ab58-e6a0e52eaf6c"",
+                    ""id"": ""a1af2c9f-9b2c-499f-b97b-2362e36c1865"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": ""NormalizeVector2"",
+                    ""processors"": """",
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""PrimaryActionInspect"",
+                    ""name"": ""PauseGame"",
                     ""type"": ""Button"",
-                    ""id"": ""0c65e09e-c972-4180-bccd-c8e6a95dfea4"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""SecondActionInspect"",
-                    ""type"": ""Button"",
-                    ""id"": ""1981b803-6696-4df5-9f23-cfcd62d751a0"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press""
-                },
-                {
-                    ""name"": ""PauseMenu"",
-                    ""type"": ""Button"",
-                    ""id"": ""28815717-dfe2-4d97-af7b-21f245f54d70"",
+                    ""id"": ""d3c0e1d5-5a88-4c4f-bc3d-576da8d3c410"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
@@ -476,67 +332,56 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""422b3607-615b-4d25-b953-8595b32b5c78"",
-                    ""path"": ""<Mouse>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""fb133c5e-f8eb-4383-ae80-f4dd7ecc44cf"",
-                    ""path"": ""<Keyboard>/e"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Xbox"",
-                    ""action"": ""PrimaryActionInspect"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""d78f6a51-d726-40fe-80b2-d60a1cbdfb1e"",
-                    ""path"": ""<Keyboard>/f"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""SecondActionInspect"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""97f274cc-5f0b-4bdb-ba32-4d35bd792e38"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Xbox"",
-                    ""action"": ""SecondActionInspect"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""44660e9c-603e-475f-9138-c0b150bd176c"",
-                    ""path"": ""<XInputController>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
-                    ""groups"": ""Xbox"",
-                    ""action"": ""Rotate"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a8629d78-d3be-4975-a5cd-6ebc201681df"",
+                    ""id"": ""a2a05b20-5c3f-4e75-b160-3fb18f4610e8"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PauseMenu"",
+                    ""action"": ""PauseGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4530380f-933f-4ef6-9f6f-a413d0ddee1c"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Xbox"",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""729547f0-db79-4260-bb6e-2ad621d5ba84"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Xbox"",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8c02f553-fc28-42a9-a9fc-a0c67de5047b"",
+                    ""path"": ""<XInputController>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone"",
+                    ""groups"": ""Xbox"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a3010c05-0168-4ded-bfe3-cd2b049c647f"",
+                    ""path"": ""<Mouse>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Pc"",
+                    ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1053,9 +898,9 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""id"": ""c7f287cc-69aa-4c4a-a472-60a18e6b537c"",
             ""actions"": [
                 {
-                    ""name"": ""PauseMenu"",
+                    ""name"": ""PauseGame"",
                     ""type"": ""Button"",
-                    ""id"": ""4688c2d8-4532-47d2-9df2-33ff9780e070"",
+                    ""id"": ""dd81c9e0-5890-4d5b-bd2a-58ca3361444d"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press""
@@ -1064,12 +909,12 @@ public class @GameInput : IInputActionCollection, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""892a362c-68fa-43a6-aab2-27f4bbb8c135"",
+                    ""id"": ""b2b4358b-2ee7-4f40-b401-72ea578d7278"",
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""PauseMenu"",
+                    ""action"": ""PauseGame"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1107,25 +952,18 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_Gameplay_Run = m_Gameplay.FindAction("Run", throwIfNotFound: true);
         m_Gameplay_Look = m_Gameplay.FindAction("Look", throwIfNotFound: true);
         m_Gameplay_Crouching = m_Gameplay.FindAction("Crouching", throwIfNotFound: true);
-        m_Gameplay_Vault = m_Gameplay.FindAction("Vault", throwIfNotFound: true);
-        m_Gameplay_PrimaryAction = m_Gameplay.FindAction("PrimaryAction", throwIfNotFound: true);
-        m_Gameplay_SecondAction = m_Gameplay.FindAction("SecondAction", throwIfNotFound: true);
-        m_Gameplay_InventoryAccess = m_Gameplay.FindAction("InventoryAccess", throwIfNotFound: true);
-        m_Gameplay_LightOn = m_Gameplay.FindAction("LightOn", throwIfNotFound: true);
-        m_Gameplay_LightOff = m_Gameplay.FindAction("LightOff", throwIfNotFound: true);
-        m_Gameplay_LightSwitch = m_Gameplay.FindAction("LightSwitch", throwIfNotFound: true);
-        m_Gameplay_RechargeOil = m_Gameplay.FindAction("RechargeOil", throwIfNotFound: true);
-        m_Gameplay_PauseMenu = m_Gameplay.FindAction("PauseMenu", throwIfNotFound: true);
+        m_Gameplay_Interaction = m_Gameplay.FindAction("Interaction", throwIfNotFound: true);
+        m_Gameplay_Inventory = m_Gameplay.FindAction("Inventory", throwIfNotFound: true);
+        m_Gameplay_PauseGame = m_Gameplay.FindAction("PauseGame", throwIfNotFound: true);
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
-        m_Inventory_InventoryDeaccess = m_Inventory.FindAction("InventoryDeaccess", throwIfNotFound: true);
-        m_Inventory_PauseMenu = m_Inventory.FindAction("PauseMenu", throwIfNotFound: true);
+        m_Inventory_Inventory = m_Inventory.FindAction("Inventory", throwIfNotFound: true);
+        m_Inventory_PauseGame = m_Inventory.FindAction("PauseGame", throwIfNotFound: true);
         // Inspection
         m_Inspection = asset.FindActionMap("Inspection", throwIfNotFound: true);
-        m_Inspection_Rotate = m_Inspection.FindAction("Rotate", throwIfNotFound: true);
-        m_Inspection_PrimaryActionInspect = m_Inspection.FindAction("PrimaryActionInspect", throwIfNotFound: true);
-        m_Inspection_SecondActionInspect = m_Inspection.FindAction("SecondActionInspect", throwIfNotFound: true);
-        m_Inspection_PauseMenu = m_Inspection.FindAction("PauseMenu", throwIfNotFound: true);
+        m_Inspection_Interaction = m_Inspection.FindAction("Interaction", throwIfNotFound: true);
+        m_Inspection_Look = m_Inspection.FindAction("Look", throwIfNotFound: true);
+        m_Inspection_PauseGame = m_Inspection.FindAction("PauseGame", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1140,7 +978,7 @@ public class @GameInput : IInputActionCollection, IDisposable
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         // Pause
         m_Pause = asset.FindActionMap("Pause", throwIfNotFound: true);
-        m_Pause_PauseMenu = m_Pause.FindAction("PauseMenu", throwIfNotFound: true);
+        m_Pause_PauseGame = m_Pause.FindAction("PauseGame", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1194,15 +1032,9 @@ public class @GameInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Run;
     private readonly InputAction m_Gameplay_Look;
     private readonly InputAction m_Gameplay_Crouching;
-    private readonly InputAction m_Gameplay_Vault;
-    private readonly InputAction m_Gameplay_PrimaryAction;
-    private readonly InputAction m_Gameplay_SecondAction;
-    private readonly InputAction m_Gameplay_InventoryAccess;
-    private readonly InputAction m_Gameplay_LightOn;
-    private readonly InputAction m_Gameplay_LightOff;
-    private readonly InputAction m_Gameplay_LightSwitch;
-    private readonly InputAction m_Gameplay_RechargeOil;
-    private readonly InputAction m_Gameplay_PauseMenu;
+    private readonly InputAction m_Gameplay_Interaction;
+    private readonly InputAction m_Gameplay_Inventory;
+    private readonly InputAction m_Gameplay_PauseGame;
     public struct GameplayActions
     {
         private @GameInput m_Wrapper;
@@ -1211,15 +1043,9 @@ public class @GameInput : IInputActionCollection, IDisposable
         public InputAction @Run => m_Wrapper.m_Gameplay_Run;
         public InputAction @Look => m_Wrapper.m_Gameplay_Look;
         public InputAction @Crouching => m_Wrapper.m_Gameplay_Crouching;
-        public InputAction @Vault => m_Wrapper.m_Gameplay_Vault;
-        public InputAction @PrimaryAction => m_Wrapper.m_Gameplay_PrimaryAction;
-        public InputAction @SecondAction => m_Wrapper.m_Gameplay_SecondAction;
-        public InputAction @InventoryAccess => m_Wrapper.m_Gameplay_InventoryAccess;
-        public InputAction @LightOn => m_Wrapper.m_Gameplay_LightOn;
-        public InputAction @LightOff => m_Wrapper.m_Gameplay_LightOff;
-        public InputAction @LightSwitch => m_Wrapper.m_Gameplay_LightSwitch;
-        public InputAction @RechargeOil => m_Wrapper.m_Gameplay_RechargeOil;
-        public InputAction @PauseMenu => m_Wrapper.m_Gameplay_PauseMenu;
+        public InputAction @Interaction => m_Wrapper.m_Gameplay_Interaction;
+        public InputAction @Inventory => m_Wrapper.m_Gameplay_Inventory;
+        public InputAction @PauseGame => m_Wrapper.m_Gameplay_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1241,33 +1067,15 @@ public class @GameInput : IInputActionCollection, IDisposable
                 @Crouching.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCrouching;
                 @Crouching.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCrouching;
                 @Crouching.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnCrouching;
-                @Vault.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnVault;
-                @Vault.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnVault;
-                @Vault.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnVault;
-                @PrimaryAction.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPrimaryAction;
-                @PrimaryAction.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPrimaryAction;
-                @PrimaryAction.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPrimaryAction;
-                @SecondAction.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnSecondAction;
-                @SecondAction.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnSecondAction;
-                @SecondAction.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnSecondAction;
-                @InventoryAccess.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInventoryAccess;
-                @InventoryAccess.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInventoryAccess;
-                @InventoryAccess.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInventoryAccess;
-                @LightOn.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightOn;
-                @LightOn.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightOn;
-                @LightOn.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightOn;
-                @LightOff.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightOff;
-                @LightOff.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightOff;
-                @LightOff.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightOff;
-                @LightSwitch.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightSwitch;
-                @LightSwitch.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightSwitch;
-                @LightSwitch.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnLightSwitch;
-                @RechargeOil.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRechargeOil;
-                @RechargeOil.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRechargeOil;
-                @RechargeOil.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRechargeOil;
-                @PauseMenu.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPauseMenu;
+                @Interaction.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInteraction;
+                @Interaction.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInteraction;
+                @Interaction.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInteraction;
+                @Inventory.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInventory;
+                @Inventory.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInventory;
+                @Inventory.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnInventory;
+                @PauseGame.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPauseGame;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -1284,33 +1092,15 @@ public class @GameInput : IInputActionCollection, IDisposable
                 @Crouching.started += instance.OnCrouching;
                 @Crouching.performed += instance.OnCrouching;
                 @Crouching.canceled += instance.OnCrouching;
-                @Vault.started += instance.OnVault;
-                @Vault.performed += instance.OnVault;
-                @Vault.canceled += instance.OnVault;
-                @PrimaryAction.started += instance.OnPrimaryAction;
-                @PrimaryAction.performed += instance.OnPrimaryAction;
-                @PrimaryAction.canceled += instance.OnPrimaryAction;
-                @SecondAction.started += instance.OnSecondAction;
-                @SecondAction.performed += instance.OnSecondAction;
-                @SecondAction.canceled += instance.OnSecondAction;
-                @InventoryAccess.started += instance.OnInventoryAccess;
-                @InventoryAccess.performed += instance.OnInventoryAccess;
-                @InventoryAccess.canceled += instance.OnInventoryAccess;
-                @LightOn.started += instance.OnLightOn;
-                @LightOn.performed += instance.OnLightOn;
-                @LightOn.canceled += instance.OnLightOn;
-                @LightOff.started += instance.OnLightOff;
-                @LightOff.performed += instance.OnLightOff;
-                @LightOff.canceled += instance.OnLightOff;
-                @LightSwitch.started += instance.OnLightSwitch;
-                @LightSwitch.performed += instance.OnLightSwitch;
-                @LightSwitch.canceled += instance.OnLightSwitch;
-                @RechargeOil.started += instance.OnRechargeOil;
-                @RechargeOil.performed += instance.OnRechargeOil;
-                @RechargeOil.canceled += instance.OnRechargeOil;
-                @PauseMenu.started += instance.OnPauseMenu;
-                @PauseMenu.performed += instance.OnPauseMenu;
-                @PauseMenu.canceled += instance.OnPauseMenu;
+                @Interaction.started += instance.OnInteraction;
+                @Interaction.performed += instance.OnInteraction;
+                @Interaction.canceled += instance.OnInteraction;
+                @Inventory.started += instance.OnInventory;
+                @Inventory.performed += instance.OnInventory;
+                @Inventory.canceled += instance.OnInventory;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
             }
         }
     }
@@ -1319,14 +1109,14 @@ public class @GameInput : IInputActionCollection, IDisposable
     // Inventory
     private readonly InputActionMap m_Inventory;
     private IInventoryActions m_InventoryActionsCallbackInterface;
-    private readonly InputAction m_Inventory_InventoryDeaccess;
-    private readonly InputAction m_Inventory_PauseMenu;
+    private readonly InputAction m_Inventory_Inventory;
+    private readonly InputAction m_Inventory_PauseGame;
     public struct InventoryActions
     {
         private @GameInput m_Wrapper;
         public InventoryActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @InventoryDeaccess => m_Wrapper.m_Inventory_InventoryDeaccess;
-        public InputAction @PauseMenu => m_Wrapper.m_Inventory_PauseMenu;
+        public InputAction @Inventory => m_Wrapper.m_Inventory_Inventory;
+        public InputAction @PauseGame => m_Wrapper.m_Inventory_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Inventory; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1336,22 +1126,22 @@ public class @GameInput : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_InventoryActionsCallbackInterface != null)
             {
-                @InventoryDeaccess.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventoryDeaccess;
-                @InventoryDeaccess.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventoryDeaccess;
-                @InventoryDeaccess.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventoryDeaccess;
-                @PauseMenu.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPauseMenu;
+                @Inventory.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventory;
+                @Inventory.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventory;
+                @Inventory.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnInventory;
+                @PauseGame.started -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_InventoryActionsCallbackInterface.OnPauseGame;
             }
             m_Wrapper.m_InventoryActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @InventoryDeaccess.started += instance.OnInventoryDeaccess;
-                @InventoryDeaccess.performed += instance.OnInventoryDeaccess;
-                @InventoryDeaccess.canceled += instance.OnInventoryDeaccess;
-                @PauseMenu.started += instance.OnPauseMenu;
-                @PauseMenu.performed += instance.OnPauseMenu;
-                @PauseMenu.canceled += instance.OnPauseMenu;
+                @Inventory.started += instance.OnInventory;
+                @Inventory.performed += instance.OnInventory;
+                @Inventory.canceled += instance.OnInventory;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
             }
         }
     }
@@ -1360,18 +1150,16 @@ public class @GameInput : IInputActionCollection, IDisposable
     // Inspection
     private readonly InputActionMap m_Inspection;
     private IInspectionActions m_InspectionActionsCallbackInterface;
-    private readonly InputAction m_Inspection_Rotate;
-    private readonly InputAction m_Inspection_PrimaryActionInspect;
-    private readonly InputAction m_Inspection_SecondActionInspect;
-    private readonly InputAction m_Inspection_PauseMenu;
+    private readonly InputAction m_Inspection_Interaction;
+    private readonly InputAction m_Inspection_Look;
+    private readonly InputAction m_Inspection_PauseGame;
     public struct InspectionActions
     {
         private @GameInput m_Wrapper;
         public InspectionActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Rotate => m_Wrapper.m_Inspection_Rotate;
-        public InputAction @PrimaryActionInspect => m_Wrapper.m_Inspection_PrimaryActionInspect;
-        public InputAction @SecondActionInspect => m_Wrapper.m_Inspection_SecondActionInspect;
-        public InputAction @PauseMenu => m_Wrapper.m_Inspection_PauseMenu;
+        public InputAction @Interaction => m_Wrapper.m_Inspection_Interaction;
+        public InputAction @Look => m_Wrapper.m_Inspection_Look;
+        public InputAction @PauseGame => m_Wrapper.m_Inspection_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Inspection; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1381,34 +1169,28 @@ public class @GameInput : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_InspectionActionsCallbackInterface != null)
             {
-                @Rotate.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnRotate;
-                @Rotate.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnRotate;
-                @Rotate.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnRotate;
-                @PrimaryActionInspect.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPrimaryActionInspect;
-                @PrimaryActionInspect.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPrimaryActionInspect;
-                @PrimaryActionInspect.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPrimaryActionInspect;
-                @SecondActionInspect.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnSecondActionInspect;
-                @SecondActionInspect.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnSecondActionInspect;
-                @SecondActionInspect.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnSecondActionInspect;
-                @PauseMenu.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPauseMenu;
+                @Interaction.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnInteraction;
+                @Interaction.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnInteraction;
+                @Interaction.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnInteraction;
+                @Look.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnLook;
+                @PauseGame.started -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_InspectionActionsCallbackInterface.OnPauseGame;
             }
             m_Wrapper.m_InspectionActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Rotate.started += instance.OnRotate;
-                @Rotate.performed += instance.OnRotate;
-                @Rotate.canceled += instance.OnRotate;
-                @PrimaryActionInspect.started += instance.OnPrimaryActionInspect;
-                @PrimaryActionInspect.performed += instance.OnPrimaryActionInspect;
-                @PrimaryActionInspect.canceled += instance.OnPrimaryActionInspect;
-                @SecondActionInspect.started += instance.OnSecondActionInspect;
-                @SecondActionInspect.performed += instance.OnSecondActionInspect;
-                @SecondActionInspect.canceled += instance.OnSecondActionInspect;
-                @PauseMenu.started += instance.OnPauseMenu;
-                @PauseMenu.performed += instance.OnPauseMenu;
-                @PauseMenu.canceled += instance.OnPauseMenu;
+                @Interaction.started += instance.OnInteraction;
+                @Interaction.performed += instance.OnInteraction;
+                @Interaction.canceled += instance.OnInteraction;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
             }
         }
     }
@@ -1522,12 +1304,12 @@ public class @GameInput : IInputActionCollection, IDisposable
     // Pause
     private readonly InputActionMap m_Pause;
     private IPauseActions m_PauseActionsCallbackInterface;
-    private readonly InputAction m_Pause_PauseMenu;
+    private readonly InputAction m_Pause_PauseGame;
     public struct PauseActions
     {
         private @GameInput m_Wrapper;
         public PauseActions(@GameInput wrapper) { m_Wrapper = wrapper; }
-        public InputAction @PauseMenu => m_Wrapper.m_Pause_PauseMenu;
+        public InputAction @PauseGame => m_Wrapper.m_Pause_PauseGame;
         public InputActionMap Get() { return m_Wrapper.m_Pause; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1537,16 +1319,16 @@ public class @GameInput : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_PauseActionsCallbackInterface != null)
             {
-                @PauseMenu.started -= m_Wrapper.m_PauseActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.performed -= m_Wrapper.m_PauseActionsCallbackInterface.OnPauseMenu;
-                @PauseMenu.canceled -= m_Wrapper.m_PauseActionsCallbackInterface.OnPauseMenu;
+                @PauseGame.started -= m_Wrapper.m_PauseActionsCallbackInterface.OnPauseGame;
+                @PauseGame.performed -= m_Wrapper.m_PauseActionsCallbackInterface.OnPauseGame;
+                @PauseGame.canceled -= m_Wrapper.m_PauseActionsCallbackInterface.OnPauseGame;
             }
             m_Wrapper.m_PauseActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @PauseMenu.started += instance.OnPauseMenu;
-                @PauseMenu.performed += instance.OnPauseMenu;
-                @PauseMenu.canceled += instance.OnPauseMenu;
+                @PauseGame.started += instance.OnPauseGame;
+                @PauseGame.performed += instance.OnPauseGame;
+                @PauseGame.canceled += instance.OnPauseGame;
             }
         }
     }
@@ -1575,27 +1357,20 @@ public class @GameInput : IInputActionCollection, IDisposable
         void OnRun(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnCrouching(InputAction.CallbackContext context);
-        void OnVault(InputAction.CallbackContext context);
-        void OnPrimaryAction(InputAction.CallbackContext context);
-        void OnSecondAction(InputAction.CallbackContext context);
-        void OnInventoryAccess(InputAction.CallbackContext context);
-        void OnLightOn(InputAction.CallbackContext context);
-        void OnLightOff(InputAction.CallbackContext context);
-        void OnLightSwitch(InputAction.CallbackContext context);
-        void OnRechargeOil(InputAction.CallbackContext context);
-        void OnPauseMenu(InputAction.CallbackContext context);
+        void OnInteraction(InputAction.CallbackContext context);
+        void OnInventory(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {
-        void OnInventoryDeaccess(InputAction.CallbackContext context);
-        void OnPauseMenu(InputAction.CallbackContext context);
+        void OnInventory(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
     public interface IInspectionActions
     {
-        void OnRotate(InputAction.CallbackContext context);
-        void OnPrimaryActionInspect(InputAction.CallbackContext context);
-        void OnSecondActionInspect(InputAction.CallbackContext context);
-        void OnPauseMenu(InputAction.CallbackContext context);
+        void OnInteraction(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
@@ -1612,6 +1387,6 @@ public class @GameInput : IInputActionCollection, IDisposable
     }
     public interface IPauseActions
     {
-        void OnPauseMenu(InputAction.CallbackContext context);
+        void OnPauseGame(InputAction.CallbackContext context);
     }
 }

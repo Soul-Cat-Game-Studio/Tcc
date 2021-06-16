@@ -17,9 +17,10 @@ public class CinemachinePovExtantion : CinemachineExtension
             {
                 if(_startRot == null) _startRot = transform.localRotation.eulerAngles;
 
-                stateMachineData.GetData<PlayerController>(key.playerController, out var player);
+                // stateMachineData.GetData<PlayerController>(key.playerController, out var player);
 
-                var deltaInput =  player.moveValue;
+                // var deltaInput =  player.moveValue;
+                var deltaInput =  Vector2.zero;
 
                 _startRot.x += deltaInput.x * 10 * Time.deltaTime;
                 _startRot.y += deltaInput.y * 10 * Time.deltaTime;

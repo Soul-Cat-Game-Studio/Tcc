@@ -7,16 +7,10 @@ public class PlayerInteract : MonoBehaviour
     public StateMachineData stateData;
     public PlayerStateKeys keys;
     public InputReader input;
+    public PlayerControl playerControl;
 
     public InteractView interactView;
-
-    private PlayerController _playerController;
-
-    private void Awake()
-    {
-        _playerController = GetComponent<PlayerController>();
-    }
-
+   
     private void OnEnable()
     {
         input.GameplayPrimaryActionEvent += HandlerPrimartAction;
@@ -37,14 +31,14 @@ public class PlayerInteract : MonoBehaviour
 
     public void HandlerPrimartAction()
     {
-        if (!_playerController.canInteract || interactView.currentActions == null) return;
+        if (!playerControl.canInteract || interactView.currentActions == null) return;
 
         interactView.currentActions?.DoPrimaryAction();
     }
 
     public void HandlerSecondAction()
     {
-        if (!_playerController.canInteract || interactView.currentActions == null) return;
+        if (!playerControl.canInteract || interactView.currentActions == null) return;
 
         interactView.currentActions?.DoSecondAction();
     }
@@ -52,6 +46,6 @@ public class PlayerInteract : MonoBehaviour
 
     private void UpdateCanInteract(bool f)
     {
-        _playerController.canInteract = f;
+        playerControl.canInteract = f;
     }
 }

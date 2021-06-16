@@ -6,15 +6,16 @@ using UnityEngine;
 public class PlayerMoveAct : Action
 {
     [SerializeField] private PlayerStateKeys _keys;
-    [SerializeField] private PlayerConfiguration _config;
+    [SerializeField] private PlayerSettings _settings;
+    [SerializeField] private PlayerControl _control;
 
-    public PlayerConfiguration.velocity setVelocity;
+    public PlayerSettings.velocity setVelocity;
         
 
     public override void ActEnter(StateMachine stateMachine)
     {
-        _config.velocitySelected = setVelocity;
-        _config.changeVelocity();
+        
+        _settings.changeVelocity(setVelocity);
     }
 
     public override void ActUpdate(StateMachine stateMachine)
@@ -29,15 +30,14 @@ public class PlayerMoveAct : Action
         stateData.GetData<Transform>(_keys.player, out var player);
 
         stateData.GetData<CharacterController>(_keys.characterController, out var controller);
-
-        stateData.GetData<PlayerController>(_keys.playerController, out var playerController);
+        
 
         // stateData.GetData<Animator>(_keys.animator, out var animator);
         
 
-        var move = (player.right * playerController.moveValue.x + player.forward * playerController.moveValue.y);
+        var move = (player.right * _control.moveValue.x + player.forward * _control.moveValue.y);
 
-        controller.Move(move * _config.currentVelocity * Time.deltaTime);
+        controller.Move(move * _settings.currentVelocity * Time.deltaTime);
 
         // animator.SetFloat(_keys.animhorizontal, playerController.moveValue.x, 0.1f, Time.deltaTime);
         // animator.SetFloat(_keys.animvertical, playerController.moveValue.y, 0.1f, Time.deltaTime);
