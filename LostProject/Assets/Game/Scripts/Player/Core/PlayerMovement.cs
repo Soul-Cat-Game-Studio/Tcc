@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void HandlerRunning()
     {
-        if (!control.canMove || !control.canRun) return;
+        if (!control.canMove || !control.canRun || !control.isMoving) return;
 
         control.isRunning = !control.isRunning;
     }

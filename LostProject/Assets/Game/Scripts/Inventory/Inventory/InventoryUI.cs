@@ -28,16 +28,16 @@ public class InventoryUI : MonoBehaviour
 
     private void OnEnable()
     {
-        input.GameplayInventoryAccessEvent += OpenUI;
-        input.InventoryDeaccessEvent += CloseUI;
+        // input.GameplayInventoryAccessEvent += OpenUI;
+        // input.InventoryDeaccessEvent += CloseUI;
 
         inventoryEvents.UpdateInventoryEvent += BuildUI;
     }
 
     private void OnDisable()
     {
-        input.GameplayInventoryAccessEvent -= OpenUI;
-        input.InventoryDeaccessEvent -= CloseUI;
+        // input.GameplayInventoryAccessEvent -= OpenUI;
+        // input.InventoryDeaccessEvent -= CloseUI;
 
         inventoryEvents.UpdateInventoryEvent -= BuildUI;
     }
@@ -124,7 +124,7 @@ public class InventoryUI : MonoBehaviour
     private void OpenUI()
     {
         input.EnableInventoryInput();
-        input.ChangeInteraction(false);
+        // input.ChangeInteraction(false);
 
         uiBackground.SetActive(true);
 
@@ -136,7 +136,7 @@ public class InventoryUI : MonoBehaviour
         cursorProxy.HideCursor();
 
         input.EnableGameplayInput();
-        input.ChangeInteraction(true);
+        // input.ChangeInteraction(true);
 
 
         _curreSelectSlot?.Deselect();
@@ -163,7 +163,7 @@ public class InventoryUI : MonoBehaviour
 
     //Call first
     public void SelectSlot(ItemUI itemUI)
-    {        
+    {
         _curreSelectSlot = itemUI;
 
         UpdateNameDiscription(true);

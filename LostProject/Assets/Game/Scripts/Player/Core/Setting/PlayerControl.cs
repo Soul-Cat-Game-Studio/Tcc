@@ -26,6 +26,12 @@ public class PlayerControl : ScriptableObject
         canMove = true;
         canRun = true;
         canCrouch = true;
+        canInteract = true;
+
+        moveValue = Vector2.zero;
+        isMoving = false;
+        isRunning = false;
+        isCrouching = false;
     }
 
 }

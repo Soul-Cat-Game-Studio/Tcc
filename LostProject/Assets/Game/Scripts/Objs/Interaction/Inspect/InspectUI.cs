@@ -10,12 +10,11 @@ public class InspectUI : MonoBehaviour
 
     private void OnEnable()
     {
-        _input.InspectPrimaryActionEvent += DropOff;
-    }
 
+    }
     private void OnDisable()
     {
-        _input.InspectPrimaryActionEvent -= DropOff;
+
     }
 
     private void DropOff()

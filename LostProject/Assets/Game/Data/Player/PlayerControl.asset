@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03412486a43063549bc268eb7c999a71, type: 3}
   m_Name: PlayerControl
   m_EditorClassIdentifier: 
-  canMove: 1
+  canMove: 0
   isMoving: 0
   canRun: 1
   isRunning: 0
   moveValue: {x: 0, y: 0}
-  canCrouch: 0
+  canCrouch: 1
   isCrouching: 0
   canInteract: 0

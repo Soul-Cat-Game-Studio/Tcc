@@ -52,7 +52,7 @@ public class ObjToTake : ObjInteractBase
         uiObserver.DeactivateGameplayCanvas(uiType);
         uiObserver.ActivateUICanvas(uiType, this);
 
-        _input.ChangeInteraction(false);
+        // _input.ChangeInteraction(false);
 
         enterInpectEvent?.Invoke();
     }
@@ -82,7 +82,7 @@ public class ObjToTake : ObjInteractBase
 
     private void After()
     {
-        _input.ChangeInteraction(true);
+        // _input.ChangeInteraction(true);
         exitInpectEvent.Invoke();
     }
 
@@ -96,7 +96,7 @@ public class ObjToTake : ObjInteractBase
 
         // if (item.amount <= 0)
         // {            
-        _input.ChangeInteraction(true);
+        // _input.ChangeInteraction(true);
         pickupEvent?.Invoke();
         gameObject.SetActive(false);
         // }

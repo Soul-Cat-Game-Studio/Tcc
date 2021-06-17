@@ -45,7 +45,7 @@ public class ObjToInspect : ObjInteractBase
         uiObserver.DeactivateGameplayCanvas(uiType);
         uiObserver.ActivateUICanvas(uiType, this);
 
-        _input.ChangeInteraction(false);
+        // _input.ChangeInteraction(false);
 
         enterInpectEvent?.Invoke();
     }
@@ -66,7 +66,7 @@ public class ObjToInspect : ObjInteractBase
 
     private void After()
     {
-        _input.ChangeInteraction(true);
+        // _input.ChangeInteraction(true);
         exitInpectEvent.Invoke();
     }
 }

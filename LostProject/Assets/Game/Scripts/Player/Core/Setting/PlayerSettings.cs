@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static InputReader;
 
 [CreateAssetMenu(fileName = "PlayerSettings", menuName = "Player/Player Settings", order = 0)]
 public class PlayerSettings : ScriptableObject
@@ -12,6 +13,7 @@ public class PlayerSettings : ScriptableObject
         Crouch,
     }
 
+    public InputReader inputReader;
 
 
     [Header("Movement")]
@@ -47,14 +49,34 @@ public class PlayerSettings : ScriptableObject
 
     [Header("Mouse Settings")]
 
+    public bool mouseInvertXAxis;
     [Range(1, 10)]
     public float mouseSensitivityX;
 
-
+    public bool mouseInvertYAxis;
     [Range(1, 10)]
     public float mouseSensitivityY;
 
-    public Vector2 cameraLimit;
+    [Space(10)]
+
+    [Header("Gamepad Settings")]
+
+    public bool gamepadInvertXAxis;
+    [Range(1, 200)]
+    public float gamepadSensitivityX;
+
+    public bool gamepadInvertYAxis;
+    [Range(1,200)]
+    public float gamepadSensitivityY;
+
+
+    public float currentSensitivityX, currentSensitivityY;
+    public bool currentInvertXAxis, currentInvertYAxis;
+
+    [Space(10)]
+
+    public Vector2 cameraLimitY;
+    public Vector2 cameraLimitX;
 
 
 
@@ -63,10 +85,24 @@ public class PlayerSettings : ScriptableObject
     public float standDown = 0.5f;
 
 
+
+    private void OnEnable()
+    {
+        inputReader.ChangeDeviceEvent += ChangeDevice;
+    }
+
+    private void OnDisable()
+    {
+        inputReader.ChangeDeviceEvent -= ChangeDevice;
+    }
+
+
     public void Inicialize()
     {
         anormalMove = false;
     }
+
+    #region Velocity
 
     public void changeVelocity(velocity velSpeed)
     {
@@ -111,4 +147,28 @@ public class PlayerSettings : ScriptableObject
                 break;
         }
     }
+
+    #endregion
+
+    private void ChangeDevice(ControlDeviceType controlDeviceType)
+    {
+        if (controlDeviceType == ControlDeviceType.Keyboard)
+        {
+            currentSensitivityX = mouseSensitivityX;
+            currentSensitivityY = mouseSensitivityY;
+
+            currentInvertXAxis = mouseInvertXAxis;
+            currentInvertYAxis = mouseInvertYAxis;
+        }
+        else
+        {
+            currentSensitivityX = gamepadSensitivityX;
+            currentSensitivityY = gamepadSensitivityY;
+
+            currentInvertXAxis = gamepadInvertXAxis;
+            currentInvertYAxis = gamepadInvertYAxis;
+        }
+    }
+
+
 }

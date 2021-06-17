@@ -14,14 +14,14 @@ public class ObjInteractBase : MonoBehaviour, IInteractable, IInteractionActions
 
     private void OnEnable()
     {
-        input.EnterGamplayMapEevnt += UiObjActivation;
-        input.ExitGamplayMapEevnt += UiObjDeactivation;
+        // input.EnterGamplayMapEevnt += UiObjActivation;
+        // input.ExitGamplayMapEevnt += UiObjDeactivation;
     }
 
     private void OnDisable()
     {
-        input.EnterGamplayMapEevnt -= UiObjActivation;
-        input.ExitGamplayMapEevnt -= UiObjDeactivation;
+        // input.EnterGamplayMapEevnt -= UiObjActivation;
+        // input.ExitGamplayMapEevnt -= UiObjDeactivation;
     }
 
 

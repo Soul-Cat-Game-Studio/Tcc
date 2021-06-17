@@ -5,14 +5,11 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "State Machine/ Condition/ Player/ Is Moving", fileName = "Is Moving")]
 public class IsMovingCO : Condition
-{
-    [SerializeField] private PlayerStateKeys _keys;
+{    
     [SerializeField] private PlayerControl control;
 
     public override bool Decide(StateMachine stateMachine)
     {
-
-
         return control.isMoving;
     }
 }

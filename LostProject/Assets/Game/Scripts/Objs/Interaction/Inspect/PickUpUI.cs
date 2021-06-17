@@ -10,14 +10,14 @@ public class PickUpUI : MonoBehaviour
 
     private void OnEnable()
     {
-        _input.InspectPrimaryActionEvent += DropOff;
-        _input.InspectSecondActionEvent += Pickup;
+        // _input.InspectPrimaryActionEvent += DropOff;
+        // _input.InspectSecondActionEvent += Pickup;
     }
 
     private void OnDisable()
     {
-        _input.InspectPrimaryActionEvent -= DropOff;
-        _input.InspectSecondActionEvent -= Pickup;
+        // _input.InspectPrimaryActionEvent -= DropOff;
+        // _input.InspectSecondActionEvent -= Pickup;
     }
 
     private void DropOff()

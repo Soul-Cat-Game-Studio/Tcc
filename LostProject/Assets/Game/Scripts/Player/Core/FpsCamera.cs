@@ -7,13 +7,14 @@ using Cinemachine;
 public class FpsCamera : MonoBehaviour
 {
     [SerializeField] private InputReader _input;
+    [SerializeField] private PlayerControl _playerControl;
     public PlayerSettings settings;
 
     [Space(20)]
 
-    [SerializeField] private Transform _camHolder;    
+    [SerializeField] private Transform _camHolder;
 
-    private Vector2 _look;  
+    private Vector2 _look;
 
     private Vector2 _camRot;
     private Vector2 _playerRot;
@@ -22,7 +23,6 @@ public class FpsCamera : MonoBehaviour
     private void OnEnable()
     {
         _input.LookEvent += UpdateLookInput;
-
     }
 
     private void OnDisable()
@@ -39,16 +39,35 @@ public class FpsCamera : MonoBehaviour
 
     private void Update()
     {
+        UpdateBodyRotation();
         UpdateLook();
+    }
+
+    private void UpdateBodyRotation()
+    {
+        if (!_playerControl.canMove) return;
+
+        //Rotate Left & Right
+        _playerRot.y += settings.currentSensitivityX * (settings.currentInvertXAxis ? -_look.x : _look.x) * Time.deltaTime;
+        transform.localRotation = Quaternion.Euler(_playerRot);
     }
 
     private void UpdateLook()
     {
-        _playerRot.y += settings.mouseSensitivityX * _look.x * Time.deltaTime;
-        transform.localRotation = Quaternion.Euler(_playerRot);
+        //Look Up & Down
+        _camRot.x += settings.currentSensitivityY * (settings.currentInvertYAxis ? _look.y : -_look.y) * Time.deltaTime;
+        _camRot.x = Mathf.Clamp(_camRot.x, settings.cameraLimitY.x, settings.cameraLimitY.y);
 
-        _camRot.x += settings.mouseSensitivityY * _look.y * Time.deltaTime;
-        _camRot.x = Mathf.Clamp(_camRot.x, settings.cameraLimit.x, settings.cameraLimit.y);
+
+        // Look Left & Right
+
+        if (!_playerControl.canMove)
+        {
+            _camRot.y += settings.currentSensitivityX * (settings.currentInvertXAxis ? -_look.x : _look.x) * Time.deltaTime;
+            _camRot.y = Mathf.Clamp(_camRot.y, settings.cameraLimitX.x, settings.cameraLimitX.y);
+        }
+
+
 
         _camHolder.localRotation = Quaternion.Euler(_camRot);
     }

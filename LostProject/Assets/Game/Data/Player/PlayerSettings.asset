@@ -12,16 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a82a4c98bb653a4c8d8bf52dc7db7cf, type: 3}
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: 9ab22b0048e9b0b4f9c8da7ca7ac73c7, type: 2}
   anormalMove: 0
   velocitySelected: 0
-  _walkVelocity: 5.37
-  _anormalWalkVelocity: 3.96
-  _crouchVelocity: 3.6
-  _anormalCrouchVelocity: 1.09
-  _runVelocity: 3.64
-  _anormalRunVelocity: 4.49
-  mouseSensitivityX: 4.24
-  mouseSensitivityY: 3.85
-  cameraLimit: {x: -90, y: 90}
+  _walkVelocity: 1.7
+  _anormalWalkVelocity: 1.46
+  _crouchVelocity: 1.34
+  _anormalCrouchVelocity: 1.23
+  _runVelocity: 2.84
+  _anormalRunVelocity: 2.34
+  mouseInvertXAxis: 0
+  mouseSensitivityX: 10
+  mouseInvertYAxis: 0
+  mouseSensitivityY: 10
+  gamepadInvertXAxis: 0
+  gamepadSensitivityX: 100
+  gamepadInvertYAxis: 0
+  gamepadSensitivityY: 100
+  currentSensitivityX: 10
+  currentSensitivityY: 10
+  currentInvertXAxis: 0
+  currentInvertYAxis: 0
+  cameraLimitY: {x: -90, y: 90}
+  cameraLimitX: {x: -30, y: 30}
   standUp: 1.73
   standDown: 0.5

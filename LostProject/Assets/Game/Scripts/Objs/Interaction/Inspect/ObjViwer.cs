@@ -15,12 +15,12 @@ public class ObjViwer : MonoBehaviour
 
     private void OnEnable()
     {
-        _input.InspectRotateObjEvent += Getpos;
+        // _input.InspectRotateObjEvent += Getpos;
     }
 
     private void OnDisable()
     {
-        _input.InspectRotateObjEvent -= Getpos;
+        // _input.InspectRotateObjEvent -= Getpos;
         
         _pos = Vector2.zero;
         _objToview = null;

@@ -10,22 +10,16 @@ public class PlayerInteract : MonoBehaviour
     public PlayerControl playerControl;
 
     public InteractView interactView;
-   
+
     private void OnEnable()
     {
-        input.GameplayPrimaryActionEvent += HandlerPrimartAction;
-        input.GameplaySecondActionEvent += HandlerSecondAction;
 
-        input.CanInteractEvent += UpdateCanInteract;
     }
 
 
     private void OnDisable()
     {
-        input.GameplayPrimaryActionEvent -= HandlerPrimartAction;
-        input.GameplaySecondActionEvent -= HandlerSecondAction;
 
-        input.CanInteractEvent -= UpdateCanInteract;
     }
 
 

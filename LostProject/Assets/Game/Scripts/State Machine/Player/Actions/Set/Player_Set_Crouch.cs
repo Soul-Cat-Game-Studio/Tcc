@@ -16,11 +16,11 @@ public class Player_Set_Crouch : Action
 
         var stateData = stateMachine.StateData;
 
-        stateData.GetData<Animator>(_keys.animator, out var animator);
+        // stateData.GetData<Animator>(_keys.animator, out var animator);
         stateData.GetData<CharacterController>(_keys.characterController, out var controller);
 
-        animator.SetBool(_keys.animIsMovin, false);
-        animator.SetBool(_keys.animIsCrouching, true);
+        // animator.SetBool(_keys.animIsMovin, false);
+        // animator.SetBool(_keys.animIsCrouching, true);
 
         playerControl.isCrouching = true;
         if(controller.height != _settings.standDown) controller.height = _settings.standDown;      

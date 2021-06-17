@@ -13,13 +13,18 @@ MonoBehaviour:
   m_Name: Player_Walk
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: d63312736b55c0945a4324688d27b889, type: 2}
+  - {fileID: 11400000, guid: 271282544c71073408e03c4dc77b4077, type: 2}
   - {fileID: 11400000, guid: e1be3e3a41a08b746a0637720520736c, type: 2}
   transitions:
   - ToState: {fileID: 11400000, guid: 8d125a7019c6dca498418a2b6e1d3a64, type: 2}
     conditionState:
     - condition: {fileID: 11400000, guid: 6fa0023000dfb9c47ba7e483aab79ca6, type: 2}
       boolState: 0
+      operation: 1
+  - ToState: {fileID: 11400000, guid: 995f1b34565401049b6c4ea8f381d5f9, type: 2}
+    conditionState:
+    - condition: {fileID: 11400000, guid: 7b1e86957ff6e9748b56d08f6e9be517, type: 2}
+      boolState: 1
       operation: 1
   - ToState: {fileID: 11400000, guid: daf08d50585987a4581c98bf217b4714, type: 2}
     conditionState:

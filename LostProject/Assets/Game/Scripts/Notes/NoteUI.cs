@@ -29,8 +29,8 @@ public class NoteUI : MonoBehaviour
         _title.text = _noteManager.note.title;
         _description.text = _noteManager.note.description;
 
-        _input.InspectPrimaryActionEvent += DropOff;
-        _input.InspectSecondActionEvent += Read;
+        // _input.InspectPrimaryActionEvent += DropOff;
+        // _input.InspectSecondActionEvent += Read;
     }
 
     private void OnDisable()
@@ -40,8 +40,8 @@ public class NoteUI : MonoBehaviour
         _uiButtonRead.SetActive(false);
         _carta.SetActive(false);
 
-        _input.InspectPrimaryActionEvent -= DropOff;
-        _input.InspectSecondActionEvent -= Read;
+        // _input.InspectPrimaryActionEvent -= DropOff;
+        // _input.InspectSecondActionEvent -= Read;
     }
 
 
