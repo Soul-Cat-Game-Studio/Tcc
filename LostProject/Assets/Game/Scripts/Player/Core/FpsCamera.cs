@@ -7,7 +7,7 @@ using Cinemachine;
 public class FpsCamera : MonoBehaviour
 {
     [SerializeField] private InputReader _input;
-    [SerializeField] private PlayerControl _playerControl;
+    [SerializeField] private PlayerControl _control;
     public PlayerSettings settings;
 
     [Space(20)]
@@ -17,7 +17,7 @@ public class FpsCamera : MonoBehaviour
     private Vector2 _look;
 
     private Vector2 _camRot;
-    private Vector2 _playerRot;
+    
 
 
     private void OnEnable()
@@ -32,9 +32,7 @@ public class FpsCamera : MonoBehaviour
 
     private void Start()
     {
-        _playerRot = transform.localRotation.eulerAngles;
         _camRot = transform.localRotation.eulerAngles;
-
     }
 
     private void Update()
@@ -45,26 +43,27 @@ public class FpsCamera : MonoBehaviour
 
     private void UpdateBodyRotation()
     {
-        if (!_playerControl.canMove) return;
+        if (!_control.canMove) return;
 
         //Rotate Left & Right
-        _playerRot.y += settings.currentSensitivityX * (settings.currentInvertXAxis ? -_look.x : _look.x) * Time.deltaTime;
-        transform.localRotation = Quaternion.Euler(_playerRot);
+        var rotY = settings.currentSensitivityX * (settings.currentInvertXAxis ? -_look.x : _look.x) * Time.deltaTime;
+        transform.Rotate(0, rotY, 0, Space.World);
+
     }
 
     private void UpdateLook()
     {
         //Look Up & Down
         _camRot.x += settings.currentSensitivityY * (settings.currentInvertYAxis ? _look.y : -_look.y) * Time.deltaTime;
-        _camRot.x = Mathf.Clamp(_camRot.x, settings.cameraLimitY.x, settings.cameraLimitY.y);
+        _camRot.x = Mathf.Clamp(_camRot.x, _control.cameraLimitY.x, _control.cameraLimitY.y);
 
 
         // Look Left & Right
 
-        if (!_playerControl.canMove)
+        if (!_control.canMove)
         {
             _camRot.y += settings.currentSensitivityX * (settings.currentInvertXAxis ? -_look.x : _look.x) * Time.deltaTime;
-            _camRot.y = Mathf.Clamp(_camRot.y, settings.cameraLimitX.x, settings.cameraLimitX.y);
+            _camRot.y = Mathf.Clamp(_camRot.y, _control.cameraLimitX.x, _control.cameraLimitX.y);
         }
 
 
@@ -76,5 +75,6 @@ public class FpsCamera : MonoBehaviour
     private void UpdateLookInput(Vector2 pos)
     {
         _look = pos;
+        _control.camMoveValue = pos;
     }
 }

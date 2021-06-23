@@ -6,31 +6,28 @@ using UnityEngine;
 public class PlayerIdleAct : Action
 {
     [SerializeField] private PlayerStateKeys _keys;
-    [SerializeField] private PlayerControl _playerControl;
-    [SerializeField] private PlayerSettings _settings;
+    [SerializeField] private PlayerControl _control;
 
+    //Try to awake
     private PlayerAnimations _animations;
     private CharacterController _characterController;
 
 
-    // public override void ActAwake(StateMachine stateMachine)
-    // {
-
-    // }
+    public override void ActAwake(StateMachine stateMachine)
+    {
+        var stateData = stateMachine.StateData;
+        stateData.GetData<CharacterController>(_keys.characterController, out _characterController);
+    }
 
     public override void ActEnter(StateMachine stateMachine)
     {
-        var stateData = stateMachine.StateData;
 
-        stateData.GetData<CharacterController>(_keys.characterController, out var characterController);
-
-
-        _playerControl.isRunning = false;
-        _playerControl.isCrouching = false;
+        _control.isRunning = false;
+        _control.isCrouching = false;
 
 
-        if (characterController.height != _settings.standUp)
-            characterController.height = _settings.standUp;
+        if (_characterController.height != _control.standUp)
+            _characterController.height = _control.standUp;
     }
 
     public override void ActUpdate(StateMachine stateMachine)

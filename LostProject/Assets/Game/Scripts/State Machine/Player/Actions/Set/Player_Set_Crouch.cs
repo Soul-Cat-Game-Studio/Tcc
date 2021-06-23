@@ -7,7 +7,7 @@ using Cinemachine;
 [CreateAssetMenu(menuName = "State Machine/ Action/ Player/ Velocity/ Player_Set_Crouch", fileName = "Player_Set_Crouch_Velocity_ACT")]
 public class Player_Set_Crouch : Action
 {
-    [SerializeField] private PlayerSettings _settings;
+    [SerializeField] private PlayerControl _control;
     public PlayerControl playerControl;
     [SerializeField] private PlayerStateKeys _keys;
 
@@ -23,6 +23,6 @@ public class Player_Set_Crouch : Action
         // animator.SetBool(_keys.animIsCrouching, true);
 
         playerControl.isCrouching = true;
-        if(controller.height != _settings.standDown) controller.height = _settings.standDown;      
+        if(controller.height != _control.standDown) controller.height = _control.standDown;      
     }
 }

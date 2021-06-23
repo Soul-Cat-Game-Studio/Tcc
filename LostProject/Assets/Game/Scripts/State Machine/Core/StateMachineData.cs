@@ -6,11 +6,11 @@ using ObjSystem = System.Object;
 [DisallowMultipleComponent]
 public class StateMachineData : MonoBehaviour
 {
-    [SerializeField] StateMachineKeys keys;
+    [SerializeField] StateMachineKeys _keys;
 
-    private void Awake()
+    public void InicializeData()
     {
-        keys.CreatKeys(this);
+        _keys.CreatKeys(this);
     }
 
     public Dictionary<string, ObjSystem> data = new Dictionary<string, ObjSystem>();

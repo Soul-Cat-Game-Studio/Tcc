@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Player_Crouch_Idle
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: ae053abc410754c43b4772ca81d0cb73, type: 2}
   - {fileID: 11400000, guid: b5a9de46aa890ba408d0c4e65f39cfb8, type: 2}
   transitions:
   - ToState: {fileID: 11400000, guid: 8d125a7019c6dca498418a2b6e1d3a64, type: 2}

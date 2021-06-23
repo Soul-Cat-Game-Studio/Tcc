@@ -12,11 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03412486a43063549bc268eb7c999a71, type: 3}
   m_Name: PlayerControl
   m_EditorClassIdentifier: 
-  canMove: 0
+  camMoveValue: {x: 0, y: 0}
+  canMove: 1
   isMoving: 0
   canRun: 1
   isRunning: 0
   moveValue: {x: 0, y: 0}
+  velocitySettings:
+    anormalMove: 0
+    velocitySelected: 0
+    _walkVelocity: 1
+    _anormalWalkVelocity: 1
+    _crouchVelocity: 1.33
+    _anormalCrouchVelocity: 1.09
+    _runVelocity: 3.19
+    _anormalRunVelocity: 2.12
   canCrouch: 1
   isCrouching: 0
-  canInteract: 0
+  canInteract: 1
+  cameraLimitY: {x: -90, y: 90}
+  cameraLimitX: {x: -90, y: 90}
+  standUp: 1.73
+  standDown: 0.5

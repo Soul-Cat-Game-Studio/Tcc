@@ -22,6 +22,7 @@ public class StateMachine : MonoBehaviour
     private void Awake()
     {
         stateData = GetComponent<StateMachineData>();
+        stateData.InicializeData();
         stateMachineTable.StateAwake(this);
     }
 

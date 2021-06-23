@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
     public PlayerStateKeys keys;
     public InputReader input;
     public PlayerControl control;
-    public PlayerSettings settings;
 
     private CharacterController _characterController;
 
@@ -41,8 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        control.Inicialization();
-        settings.Inicialize();
+        control.Inicialization();        
     }
 
     public void HandlerMovement(Vector2 pos)
@@ -76,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 
         var radius = _characterController.radius - Physics.defaultContactOffset;
 
-        if (Physics.SphereCast(lowerCenter, radius, Vector3.up, out var hit, settings.standUp, ~ignoreLayer, QueryTriggerInteraction.Ignore))
+        if (Physics.SphereCast(lowerCenter, radius, Vector3.up, out var hit, control.standUp, ~ignoreLayer, QueryTriggerInteraction.Ignore))
             return false;
 
         else

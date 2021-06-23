@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static VelocitySettings;
 
 [CreateAssetMenu(menuName = "State Machine/ Action/ Player/ Move", fileName = "Player Move ACT")]
 public class PlayerMoveAct : Action
 {
     [SerializeField] private PlayerStateKeys _keys;
-    [SerializeField] private PlayerSettings _settings;
     [SerializeField] private PlayerControl _control;
 
-    public PlayerSettings.velocity setVelocity;
+    public velocity setVelocity;
 
 
     public override void ActEnter(StateMachine stateMachine)
     {
-        _settings.changeVelocity(setVelocity);
+        _control.velocitySettings.changeVelocity(setVelocity);
     }
 
     public override void ActUpdate(StateMachine stateMachine)
@@ -32,6 +32,6 @@ public class PlayerMoveAct : Action
 
         var move = (player.right * _control.moveValue.x + player.forward * _control.moveValue.y);
 
-        controller.Move(move * _settings.currentVelocity * Time.deltaTime);
+        controller.Move(move * _control.velocitySettings.currentVelocity * Time.deltaTime);
     }
 }
